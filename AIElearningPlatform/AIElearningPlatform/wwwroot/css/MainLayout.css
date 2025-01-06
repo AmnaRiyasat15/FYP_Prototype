@@ -1,0 +1,29 @@
+﻿/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #13111a;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        transition: color 0.3s;
+    }
+
+        .nav-links a:hover {
+            color: #ff69b4;
+        }

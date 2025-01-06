@@ -1,0 +1,54 @@
+﻿<div class="container mx-auto mt-10 p-5 bg-purple-100 rounded-lg shadow-lg">
+    <h5 class="mt-2 text-lg font-semibold text-purple-700">@QuestionText</h5>
+    <form class="mt-4 space-y-4">
+        @if (Options?.Any() ?? false)
+        {
+            @foreach (var option in Options)
+            {
+                <div class="flex items-center transition duration-300 ease-in-out hover:bg-purple-200 p-2 rounded">
+                    <input class="form-check-input h-5 w-5 text-purple-600 border-zinc-300 rounded focus:ring-purple-500"
+                           type="radio"
+                           name="answer"
+                           id="@option"
+                           value="@option"
+                           @onchange="() => OnAnswerSelected.InvokeAsync(option)" />
+                    <label class="form-check-label ml-2 text-purple-800 font-medium" for="@option">@option</label>
+                </div>
+            }
+        }
+    </form>
+</div>
+
+
+
+<style>
+
+    .form-check-input:hover + .form-check-label {
+        background-color: #e9d5ff;
+        border-radius: 5px;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease;
+    }
+
+
+    .btn:hover {
+        background-color: #6b46c1;
+        transform: scale(1.05);
+        box-shadow: 0px 4px 6px rgba(107, 70, 193, 0.4);
+    }
+
+</style>
+
+@code {
+    [Parameter]
+    public string QuestionText { get; set; } = "";
+
+    [Parameter]
+    public List<string> Options { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<string> OnAnswerSelected { get; set; }
+
+    [Parameter]
+    public EventCallback OnNext { get; set; }
+}

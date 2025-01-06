@@ -1,0 +1,119 @@
+﻿@page "/quiz"
+<div class="container mx-auto mt-10 p-5 bg-card rounded-lg shadow-lg">
+    <h1 class="text-center text-4xl font-extrabold text-primary">HTML Quiz</h1>
+    <h5 class="mt-2 text-lg text-muted">Question @(CurrentQuestionIndex + 1) of @TotalQuestions:</h5>
+
+    <QuizQuestion QuestionText="@Questions[CurrentQuestionIndex].Text"
+                  Options="@Questions[CurrentQuestionIndex].Options"
+                  OnAnswerSelected="HandleAnswerSelected" />
+
+    <br />
+    <div class="flex justify-between items-center mt-6">
+        <button class="btn bg-green-600 text-black hover:bg-blue-700 transition duration-300 ease-in-out px-4 py-2 rounded-lg shadow transform hover:scale-105"
+                @onclick="GoToNextQuestion">
+            Next >
+        </button>
+    </div>
+
+</div>
+
+@code {
+    private class Question
+
+    {
+
+        public string Text { get; set; } = "";
+
+        public List<string> Options { get; set; } = new();
+
+    }
+}
+
+    @code {
+    private List<Question> Questions { get; set; } = new();
+
+    private int CurrentQuestionIndex { get; set; } = 0;
+
+    private string SelectedAnswer { get; set; } = "";
+
+    private int TotalQuestions => Questions.Count;
+
+
+
+    protected override void OnInitialized()
+
+    {
+
+        // Example data, ideally fetched from an API or passed as a parameter
+
+        Questions = new List<Question>
+        {
+            new Question
+            {
+                Text = "Who is making the Web standards?",
+                Options = new List<string> { "Microsoft", "Mozilla", "W3C", "Google" }
+            },
+            new Question
+            {
+                Text = "What does HTML stand for?",
+                Options = new List<string> { "Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "None of the above" }
+            },
+             new Question
+            {
+                Text = "Which of the following element is responsible for making the text bold in HTML?",
+                Options = new List<string> { "<pre>", "<a>", "<b>", "<br>" }
+            },
+             new Question
+            {
+                Text = "How to insert an image in HTML?",
+                Options = new List<string> { "<img href = 'jtp.png' />", "<img url = 'jtp.png' />", "<img link = 'jtp.png />' ", "<img src = 'jtp.pn' />" }
+            },
+             new Question
+            {
+                Text = "<input> is -",
+                Options = new List<string> { "a format tag.", "an empty tag.", "All of the above", "None of the above" }
+            }
+
+
+        };
+
+    }
+
+
+
+    private void GoToNextQuestion()
+
+    {
+
+        if (CurrentQuestionIndex < TotalQuestions - 1)
+
+        {
+
+            CurrentQuestionIndex++;
+
+            SelectedAnswer = "";
+
+        }
+
+        else
+
+        {
+
+
+
+            Console.WriteLine("Yes");
+
+        }
+
+    }
+
+
+
+    private void HandleAnswerSelected(string answer)
+
+    {
+
+        SelectedAnswer = answer;
+
+    }
+}

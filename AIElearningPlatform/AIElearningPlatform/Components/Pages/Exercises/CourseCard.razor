@@ -1,0 +1,52 @@
+﻿@code {
+    [Parameter]
+    public string CourseName { get; set; } = "";
+
+    [Parameter]
+    public int QuestionCount { get; set; } = 0;
+
+    private string BackgroundColor { get; set; } = GenerateRandomLightColor();
+    private string ButtonColor { get; set; } = "";
+
+    protected override void OnParametersSet()
+    {
+        ButtonColor = GetContrastingColor(BackgroundColor);
+    }
+
+    private static string GenerateRandomLightColor()
+    {
+        Random random = new Random();
+        return $"rgb({random.Next(200, 256)}, {random.Next(200, 256)}, {random.Next(200, 256)})";
+    }
+
+    private static string GetContrastingColor(string bgColor)
+    {
+
+        var parts = bgColor.Replace("rgb(", "").Replace(")", "").Split(',');
+        int r = int.Parse(parts[0].Trim());
+        int g = int.Parse(parts[1].Trim());
+        int b = int.Parse(parts[2].Trim());
+
+
+        double brightness = (r * 0.299 + g * 0.587 + b * 0.114) / 255;
+
+        // Return black or white based on brightness
+        return brightness > 0.5 ? "black" : "white";
+    }
+}
+
+<div class="card text-center shadow-lg rounded-lg overflow-hidden" style="background-color: @BackgroundColor;">
+    <div class="card-body p-5">
+        <h3 class="card-title text-xl font-bold" style="color: black;">@CourseName</h3>
+        <p class="card-text text-muted-foreground">@QuestionCount Questions covering the basics of @CourseName</p>
+        <div class="d-flex justify-content-between">
+            <a href="/quiz" class="btn btn-primary" style="background-color: #007bff; color: @BackgroundColor;">
+                Start Quiz
+            </a>
+            <a href="#" class="btn btn-primary" style="background-color: #007bff; color: @BackgroundColor;">
+                Start Exercise
+            </a>
+
+        </div>
+    </div>
+</div>

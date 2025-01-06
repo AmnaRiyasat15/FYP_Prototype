@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AIElearningPlatform.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AIElearningPlatform.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\159053-818026314_small.mp4",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\159053-818026314_small.mp4"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\215500_small.mp4",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\215500_small.mp4"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\Chatbot-logo.png",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\Chatbot-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\Content.png",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\Content.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\Course.png",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\Course.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\Engaging.png",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\Engaging.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\expertise1.PNG",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\expertise1.PNG"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\HomeImages\\question_mark.png",
+      "PackagePath": "staticwebassets\\Images\\HomeImages\\question_mark.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\TutorialImages\\C++.png",
+      "PackagePath": "staticwebassets\\Images\\TutorialImages\\C++.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\TutorialImages\\CSharp.png",
+      "PackagePath": "staticwebassets\\Images\\TutorialImages\\CSharp.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\Images\\TutorialImages\\html.png",
+      "PackagePath": "staticwebassets\\Images\\TutorialImages\\html.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\css\\MainLayout.css",
+      "PackagePath": "staticwebassets\\css\\MainLayout.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\css\\tutorial.css",
+      "PackagePath": "staticwebassets\\css\\tutorial.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\AIElearningPlatform\\AIElearningPlatform\\AIElearningPlatform\\wwwroot\\js\\chatbot.js",
+      "PackagePath": "staticwebassets\\js\\chatbot.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AIElearningPlatform.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AIElearningPlatform.props",
+      "PackagePath": "build\\AIElearningPlatform.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AIElearningPlatform.props",
+      "PackagePath": "buildMultiTargeting\\AIElearningPlatform.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AIElearningPlatform.props",
+      "PackagePath": "buildTransitive\\AIElearningPlatform.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

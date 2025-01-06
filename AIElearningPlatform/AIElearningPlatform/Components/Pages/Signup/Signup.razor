@@ -1,0 +1,65 @@
+﻿@page "/signup"
+
+<style>
+    /* Style for input placeholders */
+    ::placeholder {
+        color: white !important;
+        opacity: 1; /* Ensures the color is fully opaque */
+    }
+
+    /* Style for input fields */
+    input:focus::placeholder {
+        color: white !important;
+        opacity: 1;
+    }
+</style>
+
+<div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center" style="background-color: #13131a; color: white;">
+    <div class="card text-center shadow-lg" style="width: 100%; max-width: 500px; background-color: #2c2c39; border-radius: 20px; border: none;">
+        <div class="card-body">
+            <!-- User Icon -->
+            <div class="d-flex justify-content-center mb-4">
+                <div style="background-color: rgba(255, 255, 255, 0.2); border-radius: 50%; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center;">
+                    <i class="bi bi-person-plus-fill" style="font-size: 50px; color: rgba(255, 255, 255, 0.8);"></i>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+            <form>
+                <!-- Name Input -->
+                <div class="form-group mb-4 position-relative">
+                    <i class="bi bi-person-fill" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.6);"></i>
+                    <input type="text" class="form-control ps-5" placeholder="Full Name" style="background-color: transparent; color: white; border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); border-radius: 0;" />
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group mb-4 position-relative">
+                    <i class="bi bi-envelope-fill" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.6);"></i>
+                    <input type="email" class="form-control ps-5" placeholder="Email ID" style="background-color: transparent; color: white; border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); border-radius: 0;" />
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group mb-4 position-relative">
+                    <i class="bi bi-lock-fill" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.6);"></i>
+                    <input type="password" class="form-control ps-5" placeholder="Password" style="background-color: transparent; color: white; border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); border-radius: 0;" />
+                </div>
+
+                <!-- Confirm Password Input -->
+                <div class="form-group mb-4 position-relative">
+                    <i class="bi bi-lock-fill" style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.6);"></i>
+                    <input type="password" class="form-control ps-5" placeholder="Confirm Password" style="background-color: transparent; color: white; border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.6); border-radius: 0;" />
+                </div>
+
+                <!-- Signup Button -->
+                <button type="button" class="btn w-100 mb-4" style="background-color: #4e4e7e; color: white; border: none; padding: 10px; border-radius: 30px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); font-weight: bold;">
+                    SIGN UP
+                </button>
+
+                <!-- Login Redirect -->
+                <p class="text-center" style="color: rgba(255, 255, 255, 0.8);">
+                    Already have an account? <a href="/login" style="color: #8e44ad; text-decoration: none;">Log in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
